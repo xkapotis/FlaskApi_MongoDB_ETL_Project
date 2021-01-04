@@ -8,4 +8,4 @@
 
   * git clone https://github.com/xkapotis/FlaskApi_MongoDB_ETL_Project.git
   * cd FlaskApi_MongoDB_ETL_Project/
-  * sudo USR=<username> PSWD=<password> docker-compose up
+  * sudo USR=your_username PSWD=you_password docker-compose up
