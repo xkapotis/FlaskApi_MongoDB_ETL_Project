@@ -4,8 +4,8 @@ import json
 from pymongo import MongoClient
 import dns
 
-userName = "@@@"
-passWord = "@@@"
+userName = sys.argv[1]
+passWord = sys.argv[2]
 cluster = MongoClient(f"mongodb+srv://{userName}:{passWord}@cluster0.uuatc.mongodb.net/test?retryWrites=true&w=majority")
 db = cluster["test"]
 collection = db["test_data"]
