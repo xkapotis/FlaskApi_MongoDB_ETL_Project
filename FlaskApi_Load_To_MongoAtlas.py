@@ -4,7 +4,9 @@ import json
 from pymongo import MongoClient
 import dns
 
-cluster = MongoClient(f"mongodb+srv://<username>:<password>@cluster0.uuatc.mongodb.net/test?retryWrites=true&w=majority")
+userName = "@@@"
+passWord = "@@@"
+cluster = MongoClient(f"mongodb+srv://{userName}:{passWord}@cluster0.uuatc.mongodb.net/test?retryWrites=true&w=majority")
 db = cluster["test"]
 collection = db["test_data"]
 
@@ -32,5 +34,5 @@ def post_person():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0')
 
